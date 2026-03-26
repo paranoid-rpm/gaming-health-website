@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Дети и игры — GameHealth</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/pages.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+<nav class="navbar" id="navbar">
+  <div class="nav-logo"><i class="fas fa-gamepad"></i><span>Game<span class="accent">Health</span></span></div>
+  <ul class="nav-links">
+    <li><a href="index.html">Главная</a></li>
+    <li><a href="genres.html">Жанры</a></li>
+    <li><a href="esports.html">Киберспорт</a></li>
+    <li><a href="science.html">Исследования</a></li>
+    <li><a href="children.html" class="active">Дети</a></li>
+    <li><a href="research.html">Мозг</a></li>
+    <li><a href="therapy.html">Терапия</a></li>
+    <li><a href="future.html">Будущее</a></li>
+  </ul>
+  <div class="burger" id="burger"><span></span><span></span><span></span></div>
+</nav>
+
+<section class="page-hero" style="background: radial-gradient(ellipse at 30% 50%, rgba(16,185,129,0.2),transparent 60%), radial-gradient(ellipse at 70% 20%, rgba(6,182,212,0.15),transparent 60%), #0f0f1a;">
+  <div class="page-hero-content">
+    <span class="section-tag">👶 Дети и подростки</span>
+    <h1 class="hero-title">Игры и<br><span class="gradient-text" style="background:linear-gradient(135deg,#10b981,#06b6d4);-webkit-background-clip:text;">развитие ребёнка</span></h1>
+    <p class="hero-subtitle">Как видеоигры влияют на мозг в период его формирования? Что опасно, а что полезно? Рекомендации ВОЗ, AAP и нейробиологов.</p>
+  </div>
+</section>
+
+<!-- AGE NORMS -->
+<section class="stats-banner">
+  <div class="container">
+    <div class="section-header" style="margin-bottom:40px">
+      <span class="section-tag">📋 Нормы ВОЗ</span>
+      <h2>Рекомендуемое экранное время<br><span class="gradient-text">по возрасту</span></h2>
+    </div>
+    <div class="age-grid">
+      <div class="age-card" style="border-color:rgba(239,68,68,0.3)">
+        <div class="age-emoji">👶</div>
+        <div class="age-range">До 2 лет</div>
+        <div class="age-limit" style="color:#ef4444">0 минут</div>
+        <p>Никаких экранов. Мозг формирует базовые нейронные связи через живое взаимодействие.</p>
+      </div>
+      <div class="age-card" style="border-color:rgba(245,158,11,0.3)">
+        <div class="age-emoji">🧒</div>
+        <div class="age-range">2–5 лет</div>
+        <div class="age-limit" style="color:#f59e0b">1 час/день</div>
+        <p>Только качественный контент вместе с родителем. Игры без насилия, развивающие.</p>
+      </div>
+      <div class="age-card" style="border-color:rgba(6,182,212,0.3)">
+        <div class="age-emoji">🧑</div>
+        <div class="age-range">6–12 лет</div>
+        <div class="age-limit" style="color:#06b6d4">2 часа/день</div>
+        <p>Строгие временны́е рамки. Обязателен физический отдых и общение в реале.</p>
+      </div>
+      <div class="age-card" style="border-color:rgba(124,58,237,0.3)">
+        <div class="age-emoji">🧑‍🎓</div>
+        <div class="age-range">13–17 лет</div>
+        <div class="age-limit" style="color:#a78bfa">2–3 часа/день</div>
+        <p>Осознанный выбор жанров. Мозг ещё формируется — префронтальная кора завершит развитие к 25 годам.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DEVELOPMENT -->
+<section class="effects-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">🧩 Развитие</span>
+      <h2>Что игры дают<br><span class="gradient-text">детскому мозгу</span></h2>
+    </div>
+    <div class="effects-tabs">
+      <button class="tab-btn active" data-tab="dev-pos">✅ Польза</button>
+      <button class="tab-btn" data-tab="dev-neg">⚠️ Вред</button>
+    </div>
+    <div class="tab-content active" id="dev-pos">
+      <div class="effects-grid">
+        <div class="effect-card positive">
+          <div class="effect-icon">🔢</div>
+          <h3>Математика и логика</h3>
+          <p>Дети, играющие в стратегии, показывают результаты по математике выше на 15–20%. Стратегическое мышление, счёт ресурсов, планирование — всё это тренирует числовое мышление.</p>
+          <div class="effect-meter"><div class="meter-fill" style="width:78%"></div></div>
+        </div>
+        <div class="effect-card positive">
+          <div class="effect-icon">🗣️</div>
+          <h3>Иностранные языки</h3>
+          <p>Дети, играющие в игры на английском, осваивают язык в 2–3 раза быстрее сверстников. Контекстное обучение через нарратив — один из самых эффективных методов.</p>
+          <div class="effect-meter"><div class="meter-fill" style="width:85%"></div></div>
+        </div>
+        <div class="effect-card positive">
+          <div class="effect-icon">🤝</div>
+          <h3>Сотрудничество</h3>
+          <p>Кооперативные игры формируют навыки командной работы, переговоров и разделения ролей — критически важные компетенции 21 века.</p>
+          <div class="effect-meter"><div class="meter-fill" style="width:72%"></div></div>
+        </div>
+        <div class="effect-card positive">
+          <div class="effect-icon">🎨</div>
+          <h3>Творчество</h3>
+          <p>Minecraft, Roblox, LittleBigPlanet развивают пространственное воображение и творческое мышление. Многие дети учатся основам программирования через игровые среды.</p>
+          <div class="effect-meter"><div class="meter-fill" style="width:80%"></div></div>
+        </div>
+        <div class="effect-card positive">
+          <div class="effect-icon">💪</div>
+          <h3>Стрессоустойчивость</h3>
+          <p>Преодоление трудных уровней учит справляться с поражениями. Дети-геймеры демонстрируют более высокую устойчивость к фрустрации в реальных задачах.</p>
+          <div class="effect-meter"><div class="meter-fill" style="width:68%"></div></div>
+        </div>
+        <div class="effect-card positive">
+          <div class="effect-icon">⚡</div>
+          <h3>Реакция и моторика</h3>
+          <p>Время зрительно-моторной реакции у детей-геймеров на 20–30% ниже. Это влияет на физические виды спорта, вождение, хирургию.</p>
+          <div class="effect-meter"><div class="meter-fill" style="width:75%"></div></div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-content" id="dev-neg">
+      <div class="effects-grid">
+        <div class="effect-card negative">
+          <div class="effect-icon">📵</div>
+          <h3>Задержка речи у малышей</h3>
+          <p>До 3 лет экранное время заменяет живое общение. Каждый час перед экраном в день коррелирует с задержкой развития речи на 49%.</p>
+          <div class="effect-meter"><div class="meter-fill negative-fill" style="width:85%"></div></div>
+        </div>
+        <div class="effect-card negative">
+          <div class="effect-icon">📚</div>
+          <h3>Снижение успеваемости</h3>
+          <p>При игре более 2 часов в день успеваемость в школе снижается в среднем на 1 балл. Подростки с 5+ часами в день имеют в 3 раза больше академических проблем.</p>
+          <div class="effect-meter"><div class="meter-fill negative-fill" style="width:70%"></div></div>
+        </div>
+        <div class="effect-card negative">
+          <div class="effect-icon">😰</div>
+          <h3>Тревожность и агрессия</h3>
+          <p>Жестокие игры до 12 лет коррелируют с повышенной агрессией. Онлайн-токсичность формирует негативные социальные паттерны у детей.</p>
+          <div class="effect-meter"><div class="meter-fill negative-fill" style="width:62%"></div></div>
+        </div>
+        <div class="effect-card negative">
+          <div class="effect-icon">🏃</div>
+          <h3>Гиподинамия</h3>
+          <p>Дети-геймеры двигаются в среднем на 45 минут меньше в день. Это ведёт к ожирению, слабым костям, проблемам с сердечно-сосудистой системой.</p>
+          <div class="effect-meter"><div class="meter-fill negative-fill" style="width:75%"></div></div>
+        </div>
+        <div class="effect-card negative">
+          <div class="effect-icon">🌙</div>
+          <h3>Нарушение сна</h3>
+          <p>Синий свет экранов подавляет мелатонин. Дети, играющие перед сном, засыпают на 1–2 часа позже. Недосыпание критично для растущего мозга.</p>
+          <div class="effect-meter"><div class="meter-fill negative-fill" style="width:80%"></div></div>
+        </div>
+        <div class="effect-card negative">
+          <div class="effect-icon">👀</div>
+          <h3>Близорукость</h3>
+          <p>Эпидемия миопии среди детей. 60% подростков-геймеров имеют близорукость. Недостаток дневного света — главный виновник.</p>
+          <div class="effect-meter"><div class="meter-fill negative-fill" style="width:72%"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PARENT GUIDE -->
+<section class="tips-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">👨‍👩‍👧 Родителям</span>
+      <h2>Как выстроить<br><span class="gradient-text">здоровый гейминг</span></h2>
+    </div>
+    <div class="tips-grid">
+      <div class="tip-card"><div class="tip-number">01</div><div class="tip-icon">⏰</div><h3>Временные рамки</h3><p>Устанавливай чёткое время: не гаджеты за 1 час до сна, не более 2 часов в день в будни.</p></div>
+      <div class="tip-card"><div class="tip-number">02</div><div class="tip-icon">🎮</div><h3>Выбор игр</h3><p>Изучай рейтинги PEGI/ESRB. Для детей до 12 лет — только подходящие по возрасту игры.</p></div>
+      <div class="tip-card"><div class="tip-number">03</div><div class="tip-icon">🤝</div><h3>Играй вместе</h3><p>Совместные игры с ребёнком дают понимание его интересов и укрепляют доверие.</p></div>
+      <div class="tip-card"><div class="tip-number">04</div><div class="tip-icon">🏡</div><h3>Зона для игр</h3><p>Компьютер в общей комнате, а не в спальне. Это снижает злоупотребление в 2 раза.</p></div>
+      <div class="tip-card"><div class="tip-number">05</div><div class="tip-icon">💬</div><h3>Разговор, не запрет</h3><p>Полный запрет создаёт «запретный плод». Лучше обсуждать игры и учить самоконтролю.</p></div>
+      <div class="tip-card"><div class="tip-number">06</div><div class="tip-icon">🌳</div><h3>2 часа на улице</h3><p>Дневной свет предотвращает близорукость. Обязательные прогулки компенсируют время у экрана.</p></div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer"><div class="container"><div class="footer-bottom" style="border-top:none;"><p>© 2026 GameHealth — <a href="index.html" style="color:var(--primary-light)">Вернуться на главную</a></p></div></div></footer>
+<script src="js/main.js"></script>
+</body>
+</html>
