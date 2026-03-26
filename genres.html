@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GameHealth — Жанры игр и здоровье</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/genres.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+<nav class="navbar" id="navbar">
+  <div class="nav-logo">
+    <a href="index.html" style="display:flex;align-items:center;gap:10px;text-decoration:none;color:inherit">
+      <i class="fas fa-gamepad"></i>
+      <span>Game<span class="accent">Health</span></span>
+    </a>
+  </div>
+  <ul class="nav-links">
+    <li><a href="index.html">Главная</a></li>
+    <li><a href="genres.html" class="active-link">Жанры</a></li>
+    <li><a href="science.html">Наука</a></li>
+    <li><a href="esports.html">Киберспорт</a></li>
+    <li><a href="tools.html">Инструменты</a></li>
+  </ul>
+  <div class="burger" id="burger"><span></span><span></span><span></span></div>
+</nav>
+
+<!-- HERO -->
+<section class="page-hero genres-hero">
+  <div class="page-hero-content">
+    <span class="section-tag">🎮 Классификация</span>
+    <h1>Жанры игр<br/><span class="gradient-text">и их влияние</span></h1>
+    <p>Каждый жанр по-разному воздействует на мозг, тело и психику. Узнай, что делает с тобой твоя любимая игра.</p>
+  </div>
+  <div class="genres-wheel" id="genresWheel"></div>
+</section>
+
+<!-- GENRE CARDS GRID -->
+<section class="genres-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">📊 Анализ</span>
+      <h2>8 главных жанров: <span class="gradient-text">детальный разбор</span></h2>
+      <p>Нажми на карточку жанра для подробной информации</p>
+    </div>
+
+    <div class="genres-grid">
+
+      <!-- ACTION -->
+      <div class="genre-card" data-genre="action">
+        <div class="genre-header" style="background:linear-gradient(135deg,#ee0979,#ff6b6b)">
+          <div class="genre-icon">🔫</div>
+          <div>
+            <h3>Action / Шутеры</h3>
+            <span class="genre-badge">Высокая интенсивность</span>
+          </div>
+        </div>
+        <div class="genre-body">
+          <div class="genre-scores">
+            <div class="score-item">
+              <span>Реакция</span>
+              <div class="score-bar"><div class="score-fill" style="width:95%;background:linear-gradient(90deg,#10b981,#06b6d4)"></div></div>
+              <span class="score-val">95%</span>
+            </div>
+            <div class="score-item">
+              <span>Стресс</span>
+              <div class="score-bar"><div class="score-fill" style="width:85%;background:linear-gradient(90deg,#ef4444,#f59e0b)"></div></div>
+              <span class="score-val">85%</span>
+            </div>
+            <div class="score-item">
+              <span>Когниция</span>
+              <div class="score-bar"><div class="score-fill" style="width:80%;background:linear-gradient(90deg,#7c3aed,#a78bfa)"></div></div>
+              <span class="score-val">80%</span>
+            </div>
+            <div class="score-item">
+              <span>Агрессия</span>
+              <div class="score-bar"><div class="score-fill" style="width:60%;background:linear-gradient(90deg,#ef4444,#f59e0b)"></div></div>
+              <span class="score-val">60%</span>
+            </div>
+          </div>
+          <div class="genre-facts">
+            <div class="gfact">⚡ Уменьшает время реакции на 11–13%</div>
+            <div class="gfact">🧠 Расширяет поле зрения на 20°</div>
+            <div class="gfact">⚠️ Повышает кортизол при 4ч+</div>
+            <div class="gfact">🎯 Применяется в военных симуляторах</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RPG -->
+      <div class="genre-card" data-genre="rpg">
+        <div class="genre-header" style="background:linear-gradient(135deg,#7c3aed,#a78bfa)">
+          <div class="genre-icon">⚔️</div>
+          <div>
+            <h3>RPG</h3>
+            <span class="genre-badge">Глубокое погружение</span>
+          </div>
+        </div>
+        <div class="genre-body">
+          <div class="genre-scores">
+            <div class="score-item">
+              <span>Эмпатия</span>
+              <div class="score-bar"><div class="score-fill" style="width:90%;background:linear-gradient(90deg,#10b981,#06b6d4)"></div></div>
+              <span class="score-val">90%</span>
+            </div>
+            <div class="score-item">
+              <span>Нарратив</span>
+              <div class="score-bar"><div class="score-fill" style="width:95%;background:linear-gradient(90deg,#7c3aed,#a78bfa)"></div></div>
+              <span class="score-val">95%</span>
+            </div>
+            <div class="score-item">
+              <span>Стратегия</span>
+              <div class="score-bar"><div class="score-fill" style="width:85%;background:linear-gradient(90deg,#f59e0b,#ef4444)"></div></div>
+              <span class="score-val">85%</span>
+            </div>
+            <div class="score-item">
+              <span>Эскапизм</span>
+              <div class="score-bar"><div class="score-fill" style="width:88%;background:linear-gradient(90deg,#ef4444,#f59e0b)"></div></div>
+              <span class="score-val">88%</span>
+            </div>
+          </div>
+          <div class="genre-facts">
+            <div class="gfact">📖 Развивает нарративное мышление</div>
+            <div class="gfact">🤝 Повышает эмпатию через персонажа</div>
+            <div class="gfact">⚠️ Высокий риск эскапизма (уход от реальности)</div>
+            <div class="gfact">🧩 Тренирует долгосрочное планирование</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- STRATEGY -->
+      <div class="genre-card" data-genre="strategy">
+        <div class="genre-header" style="background:linear-gradient(135deg,#0369a1,#06b6d4)">
+          <div class="genre-icon">♟️</div>
+          <div>
+            <h3>Стратегии</h3>
+            <span class="genre-badge">Интеллект</span>
+          </div>
+        </div>
+        <div class="genre-body">
+          <div class="genre-scores">
+            <div class="score-item">
+              <span>IQ-рост</span>
+              <div class="score-bar"><div class="score-fill" style="width:92%;background:linear-gradient(90deg,#10b981,#06b6d4)"></div></div>
+              <span class="score-val">92%</span>
+            </div>
+            <div class="score-item">
+              <span>Рабочая память</span>
+              <div class="score-bar"><div class="score-fill" style="width:88%;background:linear-gradient(90deg,#7c3aed,#a78bfa)"></div></div>
+              <span class="score-val">88%</span>
+            </div>
+            <div class="score-item">
+              <span>Стресс</span>
+              <div class="score-bar"><div class="score-fill" style="width:40%;background:linear-gradient(90deg,#10b981,#06b6d4)"></div></div>
+              <span class="score-val">40%</span>
+            </div>
+            <div class="score-item">
+              <span>Усталость глаз</span>
+              <div class="score-bar"><div class="score-fill" style="width:65%;background:linear-gradient(90deg,#ef4444,#f59e0b)"></div></div>
+              <span class="score-val">65%</span>
+            </div>
+          </div>
+          <div class="genre-facts">
+            <div class="gfact">🧠 +5–10 пунктов IQ у регулярных игроков</div>
+            <div class="gfact">📈 Лучшие менеджеры часто играют в RTS</div>
+            <div class="gfact">✅ Низкий уровень агрессии</div>
+            <div class="gfact">⏰ Риск потери времени (сессии 4–8ч)</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SPORTS/RACING -->
+      <div class="genre-card" data-genre="sports">
+        <div class="genre-header" style="background:linear-gradient(135deg,#065f46,#10b981)">
+          <div class="genre-icon">⚽</div>
+          <div>
+            <h3>Спорт / Гонки</h3>
+            <span class="genre-badge">Координация</span>
+          </div>
+        </div>
+        <div class="genre-body">
+          <div class="genre-scores">
+            <div class="score-item">
+              <span>Координация</span>
+              <div class="score-bar"><div class="score-fill" style="width:90%;background:linear-gradient(90deg,#10b981,#06b6d4)"></div></div>
+              <span class="score-val">90%</span>
+            </div>
+            <div class="score-item">
+              <span>Командный дух</span>
+              <div class="score-bar"><div class="score-fill" style="width:85%;background:linear-gradient(90deg,#7c3aed,#a78bfa)"></div></div>
+              <span class="score-val">85%</span>
+            </div>
+            <div class="score-item">
+              <span>Стресс</span>
+              <div class="score-bar"><div class="score-fill" style="width:55%;background:linear-gradient(90deg,#ef4444,#f59e0b)"></div></div>
+              <span class="score-val">55%</span>
+            </div>
+            <div class="score-item">
+              <span>Мотивация</span>
+              <div class="score-bar"><div class="score-fill" style="width:88%;background:linear-gradient(90deg,#10b981,#06b6d4)"></div></div>
+              <span class="score-val">88%</span>
+            </div>
+          </div>
+          <div class="genre-facts">
+            <div class="gfact">🏆 Мотивирует к реальному спорту</div>
+            <div class="gfact">👁️ Развивает пространственную координацию</div>
+            <div class="gfact">🤝 Укрепляет командную работу</div>
+            <div class="gfact">✅ Низкий риск зависимости</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- HORROR -->
+      <div class="genre-card" data-genre="horror">
+        <div class="genre-header" style="background:linear-gradient(135deg,#1c1c2e,#7c3aed)">
+          <div class="genre-icon">👻</div>
+          <div>
+            <h3>Хорроры</h3>
+            <span class="genre-badge">Адреналин</span>
+          </div>
+        </div>
+        <div class="genre-body">
+          <div class="genre-scores">
+            <div class="score-item">
+              <span>Адреналин</span>
+              <div class="score-bar"><div class="score-fill" style="width:98%;background:linear-gradient(90deg,#ef4444,#f59e0b)"></div></div>
+              <span class="score-val">98%</span>
+            </div>
+            <div class="score-item">
+              <span>Тревожность</span>
+              <div class="score-bar"><div class="score-fill" style="width:80%;background:linear-gradient(90deg,#ef4444,#f59e0b)"></div></div>
+              <span class="score-val">80%</span>
+            </div>
+            <div class="score-item">
+              <span>ЧСС</span>
+              <div class="score-bar"><div class="score-fill" style="width:92%;background:linear-gradient(90deg,#ef4444,#f59e0b)"></div></div>
+              <span class="score-val">+92%</span>
+            </div>
+            <div class="score-item">
+              <span>Иммунитет к стрессу</span>
+              <div class="score-bar"><div class="score-fill" style="width:70%;background:linear-gradient(90deg,#10b981,#06b6d4)"></div></div>
+              <span class="score-val">70%</span>
+            </div>
+          </div>
+          <div class="genre-facts">
+            <div class="gfact">💓 ЧСС достигает 175 уд/мин в хоррорах</div>
+            <div class="gfact">🧠 Тренирует управление страхом</div>
+            <div class="gfact">⚠️ Не рекомендуется при тревожных расстройствах</div>
+            <div class="gfact">😴 Нарушает сон при игре ночью</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CASUAL/PUZZLE -->
+      <div class="genre-card" data-genre="casual">
+        <div class="genre-header" style="background:linear-gradient(135deg,#d97706,#f59e0b)">
+          <div class="genre-icon">🧩</div>
+          <div>
+            <h3>Казуальные / Пазлы</h3>
+            <span class="genre-badge">Расслабление</span>
+          </div>
+        </div>
+        <div class="genre-body">
+          <div class="genre-scores">
+            <div class="score-item">
+              <span>Снятие стресса</span>
+              <div class="score-bar"><div class="score-fill" style="width:90%;background:linear-gradient(90deg,#10b981,#06b6d4)"></div></div>
+              <span class="score-val">90%</span>
+            </div>
+            <div class="score-item">
+              <span>Логика</span>
+              <div class="score-bar"><div class="score-fill" style="width:85%;background:linear-gradient(90deg,#7c3aed,#a78bfa)"></div></div>
+              <span class="score-val">85%</span>
+            </div>
+            <div class="score-item">
+              <span>Зависимость</span>
+              <div class="score-bar"><div class="score-fill" style="width:75%;background:linear-gradient(90deg,#ef4444,#f59e0b)"></div></div>
+              <span class="score-val">75%</span>
+            </div>
+            <div class="score-item">
+              <span>Польза для мозга</span>
+              <div class="score-bar"><div class="score-fill" style="width:80%;background:linear-gradient(90deg,#10b981,#06b6d4)"></div></div>
+              <span class="score-val">80%</span>
+            </div>
+          </div>
+          <div class="genre-facts">
+            <div class="gfact">🧩 Tetris снижает тревожность на 30%</div>
+            <div class="gfact">👵 Замедляют когнитивное старение</div>
+            <div class="gfact">⚠️ Мобильные казуалки — риск phone addiction</div>
+            <div class="gfact">✅ Безопасны для детей 7+</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MMO -->
+      <div class="genre-card" data-genre="mmo">
+        <div class="genre-header" style="background:linear-gradient(135deg,#0891b2,#06b6d4)">
+          <div class="genre-icon">🌍</div>
+          <div>
+            <h3>MMO / Online</h3>
+            <span class="genre-badge">Социальность</span>
+          </div>
+        </div>
+        <div class="genre-body">
+          <div class="genre-scores">
+            <div class="score-item">
+              <span>Социализация</span>
+              <div class="score-bar"><div class="score-fill" style="width:95%;background:linear-gradient(90deg,#10b981,#06b6d4)"></div></div>
+              <span class="score-val">95%</span>
+            </div>
+            <div class="score-item">
+              <span>Риск зависимости</span>
+              <div class="score-bar"><div class="score-fill" style="width:90%;background:linear-gradient(90deg,#ef4444,#f59e0b)"></div></div>
+              <span class="score-val">90%</span>
+            </div>
+            <div class="score-item">
+              <span>Лидерство</span>
+              <div class="score-bar"><div class="score-fill" style="width:85%;background:linear-gradient(90deg,#7c3aed,#a78bfa)"></div></div>
+              <span class="score-val">85%</span>
+            </div>
+            <div class="score-item">
+              <span>Сон</span>
+              <div class="score-bar"><div class="score-fill" style="width:30%;background:linear-gradient(90deg,#ef4444,#f59e0b)"></div></div>
+              <span class="score-val">-70%</span>
+            </div>
+          </div>
+          <div class="genre-facts">
+            <div class="gfact">👫 70% игроков завели реальных друзей</div>
+            <div class="gfact">🏰 Развивает лидерские качества (гильдии)</div>
+            <div class="gfact">⚠️ Самый высокий риск игровой зависимости</div>
+            <div class="gfact">😴 Средний сон MMO-игрока — 5.2ч</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- VR -->
+      <div class="genre-card" data-genre="vr">
+        <div class="genre-header" style="background:linear-gradient(135deg,#7c3aed,#06b6d4)">
+          <div class="genre-icon">🥽</div>
+          <div>
+            <h3>VR-игры</h3>
+            <span class="genre-badge">Будущее</span>
+          </div>
+        </div>
+        <div class="genre-body">
+          <div class="genre-scores">
+            <div class="score-item">
+              <span>Физ. активность</span>
+              <div class="score-bar"><div class="score-fill" style="width:85%;background:linear-gradient(90deg,#10b981,#06b6d4)"></div></div>
+              <span class="score-val">85%</span>
+            </div>
+            <div class="score-item">
+              <span>Иммерсивность</span>
+              <div class="score-bar"><div class="score-fill" style="width:98%;background:linear-gradient(90deg,#7c3aed,#a78bfa)"></div></div>
+              <span class="score-val">98%</span>
+            </div>
+            <div class="score-item">
+              <span>Укачивание</span>
+              <div class="score-bar"><div class="score-fill" style="width:65%;background:linear-gradient(90deg,#ef4444,#f59e0b)"></div></div>
+              <span class="score-val">65%</span>
+            </div>
+            <div class="score-item">
+              <span>Мед. применение</span>
+              <div class="score-bar"><div class="score-fill" style="width:92%;background:linear-gradient(90deg,#10b981,#06b6d4)"></div></div>
+              <span class="score-val">92%</span>
+            </div>
+          </div>
+          <div class="genre-facts">
+            <div class="gfact">🏃 Beat Saber = ~8 ккал/мин (лёгкий бег)</div>
+            <div class="gfact">🏥 VR-терапия ПТСР одобрена FDA</div>
+            <div class="gfact">⚠️ Киберболезнь у 40% новых пользователей</div>
+            <div class="gfact">👁️ Нельзя до 12 лет — риск для зрения</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- COMPARISON TABLE -->
+<section class="comparison-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">📋 Сравнение</span>
+      <h2>Полная таблица <span class="gradient-text">по жанрам</span></h2>
+    </div>
+    <div class="table-wrapper">
+      <table class="comparison-table">
+        <thead>
+          <tr>
+            <th>Жанр</th>
+            <th>🧠 Мозг</th>
+            <th>💪 Тело</th>
+            <th>😊 Психика</th>
+            <th>⚠️ Риски</th>
+            <th>✅ Польза</th>
+            <th>Итог</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="genre-emoji">🔫</span> Action</td>
+            <td><span class="rating high">★★★★★</span></td>
+            <td><span class="rating mid">★★★☆☆</span></td>
+            <td><span class="rating mid">★★★☆☆</span></td>
+            <td>Стресс, агрессия</td>
+            <td>Реакция, внимание</td>
+            <td><span class="verdict good">Умеренно</span></td>
+          </tr>
+          <tr>
+            <td><span class="genre-emoji">⚔️</span> RPG</td>
+            <td><span class="rating high">★★★★☆</span></td>
+            <td><span class="rating low">★☆☆☆☆</span></td>
+            <td><span class="rating high">★★★★★</span></td>
+            <td>Эскапизм, сон</td>
+            <td>Эмпатия, нарратив</td>
+            <td><span class="verdict good">Хорошо</span></td>
+          </tr>
+          <tr>
+            <td><span class="genre-emoji">♟️</span> Стратегии</td>
+            <td><span class="rating high">★★★★★</span></td>
+            <td><span class="rating low">★★☆☆☆</span></td>
+            <td><span class="rating high">★★★★☆</span></td>
+            <td>Время сессий</td>
+            <td>IQ, планирование</td>
+            <td><span class="verdict best">Отлично</span></td>
+          </tr>
+          <tr>
+            <td><span class="genre-emoji">⚽</span> Спорт</td>
+            <td><span class="rating mid">★★★☆☆</span></td>
+            <td><span class="rating mid">★★★☆☆</span></td>
+            <td><span class="rating high">★★★★☆</span></td>
+            <td>Низкие</td>
+            <td>Мотивация, команда</td>
+            <td><span class="verdict best">Отлично</span></td>
+          </tr>
+          <tr>
+            <td><span class="genre-emoji">👻</span> Хорроры</td>
+            <td><span class="rating mid">★★★☆☆</span></td>
+            <td><span class="rating mid">★★★☆☆</span></td>
+            <td><span class="rating low">★★☆☆☆</span></td>
+            <td>Тревога, сон</td>
+            <td>Адреналин, стрессоустойчивость</td>
+            <td><span class="verdict warn">С осторожностью</span></td>
+          </tr>
+          <tr>
+            <td><span class="genre-emoji">🧩</span> Казуальные</td>
+            <td><span class="rating mid">★★★★☆</span></td>
+            <td><span class="rating low">★☆☆☆☆</span></td>
+            <td><span class="rating high">★★★★★</span></td>
+            <td>Phone addiction</td>
+            <td>Релакс, логика</td>
+            <td><span class="verdict good">Хорошо</span></td>
+          </tr>
+          <tr>
+            <td><span class="genre-emoji">🌍</span> MMO</td>
+            <td><span class="rating mid">★★★☆☆</span></td>
+            <td><span class="rating low">★☆☆☆☆</span></td>
+            <td><span class="rating mid">★★★☆☆</span></td>
+            <td>Зависимость, сон</td>
+            <td>Социализация</td>
+            <td><span class="verdict warn">С осторожностью</span></td>
+          </tr>
+          <tr>
+            <td><span class="genre-emoji">🥽</span> VR</td>
+            <td><span class="rating high">★★★★☆</span></td>
+            <td><span class="rating high">★★★★★</span></td>
+            <td><span class="rating high">★★★★☆</span></td>
+            <td>Укачивание, зрение</td>
+            <td>Физ. активность, медицина</td>
+            <td><span class="verdict best">Отлично</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- AGE SECTION -->
+<section class="age-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">👶 Возраст</span>
+      <h2>Влияние по <span class="gradient-text">возрастным группам</span></h2>
+    </div>
+    <div class="age-grid">
+      <div class="age-card">
+        <div class="age-badge">6–12 лет</div>
+        <div class="age-icon">👦</div>
+        <h3>Дети</h3>
+        <ul>
+          <li>✅ Обучающие игры развивают речь и счёт</li>
+          <li>✅ Мелкая моторика через геймпад</li>
+          <li>⚠️ Лимит: 1 час в день</li>
+          <li>❌ Запрет: хорроры, 18+, VR</li>
+          <li>❌ Риск: формирование зависимости</li>
+        </ul>
+      </div>
+      <div class="age-card">
+        <div class="age-badge">13–17 лет</div>
+        <div class="age-icon">🧑</div>
+        <h3>Подростки</h3>
+        <ul>
+          <li>✅ Социализация через онлайн-игры</li>
+          <li>✅ Развитие стратегического мышления</li>
+          <li>⚠️ Лимит: 2–3 часа в день</li>
+          <li>⚠️ Контроль жанров (насилие)</li>
+          <li>❌ Пик риска игровой зависимости</li>
+        </ul>
+      </div>
+      <div class="age-card">
+        <div class="age-badge">18–35 лет</div>
+        <div class="age-icon">🧔</div>
+        <h3>Взрослые</h3>
+        <ul>
+          <li>✅ Все жанры без ограничений</li>
+          <li>✅ Максимальная когнитивная польза</li>
+          <li>⚠️ Следи за балансом работа/игры</li>
+          <li>⚠️ Риск для позвоночника (сидячий режим)</li>
+          <li>✅ Стресс-менеджмент через игры</li>
+        </ul>
+      </div>
+      <div class="age-card">
+        <div class="age-badge">36–60 лет</div>
+        <div class="age-icon">🧓</div>
+        <h3>Зрелые</h3>
+        <ul>
+          <li>✅ Пазлы замедляют старение мозга</li>
+          <li>✅ VR для реабилитации</li>
+          <li>⚠️ Зрение — особое внимание</li>
+          <li>⚠️ Суставы рук (артрит)</li>
+          <li>✅ Казуальные игры — идеальный вариант</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-bottom" style="border:none;padding:30px 0">
+      <p>© 2026 GameHealth — <a href="index.html" style="color:var(--primary-light)">На главную</a></p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/genres.js"></script>
+</body>
+</html>
