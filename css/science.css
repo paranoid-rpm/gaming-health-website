@@ -1,0 +1,60 @@
+/* SCIENCE PAGE */
+.science-hero {
+  background: radial-gradient(ellipse at 20% 50%, rgba(124,58,237,0.2),transparent 60%),
+              radial-gradient(ellipse at 80% 20%, rgba(16,185,129,0.1),transparent 50%), var(--dark);
+}
+.science-stats-row { display:flex; gap:32px; margin-top:32px; flex-wrap:wrap; }
+.sci-stat { display:flex; flex-direction:column; }
+.sci-num { font-family:'Orbitron',sans-serif; font-size:1.6rem; font-weight:900; color:var(--primary-light); }
+.sci-stat span:last-child { font-size:0.8rem; color:var(--text-muted); margin-top:2px; }
+
+/* Brain Animation */
+.science-brain-anim { position:relative; width:280px; height:280px; flex-shrink:0; display:flex; align-items:center; justify-content:center; }
+.brain-glow { font-size:5rem; z-index:1; filter:drop-shadow(0 0 40px rgba(124,58,237,0.7)); animation:float 3s ease-in-out infinite; }
+.orbit { position:absolute; border:1px solid rgba(124,58,237,0.3); border-radius:50%; animation:spin linear infinite; }
+.orbit1 { width:160px; height:160px; animation-duration:6s; }
+.orbit2 { width:220px; height:220px; animation-duration:10s; animation-direction:reverse; }
+.orbit3 { width:280px; height:280px; animation-duration:15s; }
+.orbit-dot { width:10px; height:10px; background:var(--primary); border-radius:50%; position:absolute; top:-5px; left:50%; transform:translateX(-50%); box-shadow:0 0 10px rgba(124,58,237,0.8); }
+
+/* Research Timeline */
+.research-timeline-section { padding:80px 0; background:var(--dark2); }
+.rt-timeline { position:relative; padding-left:80px; }
+.rt-timeline::before { content:''; position:absolute; left:48px; top:0; bottom:0; width:2px; background:linear-gradient(to bottom,transparent,var(--primary),var(--accent),transparent); }
+.rt-item { display:flex; gap:24px; margin-bottom:40px; align-items:flex-start; position:relative; }
+.rt-year { min-width:60px; font-family:'Orbitron',sans-serif; font-size:0.9rem; font-weight:900; color:var(--primary-light); padding-top:4px; text-align:right; margin-left:-80px; margin-right:20px; }
+.rt-dot { width:14px; height:14px; background:var(--primary); border-radius:50%; border:3px solid var(--dark2); flex-shrink:0; margin-top:6px; box-shadow:0 0 12px rgba(124,58,237,0.5); position:absolute; left:-22px; }
+.rt-content { padding:20px 24px; background:var(--card-bg); border:1px solid var(--card-border); border-radius:14px; flex:1; transition:var(--transition); }
+.rt-content:hover { border-color:rgba(124,58,237,0.3); transform:translateX(6px); }
+.rt-content h3 { font-size:1rem; font-weight:700; color:white; margin-bottom:8px; }
+.rt-content p { font-size:0.88rem; color:var(--text-muted); line-height:1.6; margin-bottom:10px; }
+.rt-tag { font-size:0.75rem; padding:3px 10px; border-radius:20px; background:rgba(124,58,237,0.15); color:var(--primary-light); border:1px solid rgba(124,58,237,0.2); }
+
+/* Neuro Section */
+.neuro-section { padding:80px 0; background:var(--dark3); }
+.neuro-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:24px; }
+.neuro-card { padding:28px; background:var(--card-bg); border:1px solid var(--card-border); border-radius:20px; transition:var(--transition); }
+.neuro-card:hover { transform:translateY(-6px); border-color:rgba(124,58,237,0.3); }
+.neuro-icon { width:52px; height:52px; border-radius:12px; display:flex; align-items:center; justify-content:center; font-size:1.5rem; margin-bottom:16px; }
+.neuro-card h3 { font-size:1rem; font-weight:700; color:white; margin-bottom:10px; }
+.neuro-card p { font-size:0.86rem; color:var(--text-muted); line-height:1.6; margin-bottom:20px; }
+.neuro-chart { display:flex; align-items:flex-end; gap:6px; height:70px; padding:8px; background:rgba(255,255,255,0.03); border-radius:10px; margin-bottom:8px; }
+.nc-bar { flex:1; border-radius:4px 4px 0 0; position:relative; display:flex; align-items:flex-start; justify-content:center; min-height:10px; transition:height 1.2s ease; }
+.nc-bar span { font-size:0.7rem; color:rgba(255,255,255,0.7); font-weight:700; padding-top:3px; }
+.nc-labels { display:flex; gap:6px; }
+.nc-labels span { flex:1; font-size:0.7rem; color:var(--text-muted); text-align:center; }
+
+/* Universities */
+.unis-section { padding:80px 0; background:var(--dark); }
+.unis-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:24px; }
+.uni-card { padding:28px; background:var(--card-bg); border:1px solid var(--card-border); border-radius:16px; transition:var(--transition); }
+.uni-card:hover { transform:translateY(-6px); border-color:rgba(124,58,237,0.3); box-shadow:0 20px 40px rgba(0,0,0,0.3); }
+.uni-logo { font-size:2.5rem; margin-bottom:14px; display:block; }
+.uni-card h3 { font-size:1.05rem; font-weight:700; color:white; margin-bottom:10px; }
+.uni-card p { font-size:0.87rem; color:var(--text-muted); line-height:1.6; margin-bottom:14px; }
+.uni-focus { font-size:0.75rem; padding:4px 12px; border-radius:20px; background:rgba(124,58,237,0.15); color:var(--primary-light); border:1px solid rgba(124,58,237,0.2); }
+
+@media(max-width:768px){
+  .rt-timeline { padding-left:50px; }
+  .rt-year { font-size:0.75rem; }
+}

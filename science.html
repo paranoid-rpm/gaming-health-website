@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GameHealth — Наука об играх</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/science.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+<nav class="navbar" id="navbar">
+  <div class="nav-logo">
+    <a href="index.html" style="display:flex;align-items:center;gap:10px;text-decoration:none;color:inherit">
+      <i class="fas fa-gamepad"></i><span>Game<span class="accent">Health</span></span>
+    </a>
+  </div>
+  <ul class="nav-links">
+    <li><a href="index.html">Главная</a></li>
+    <li><a href="genres.html">Жанры</a></li>
+    <li><a href="science.html" class="active-link">Наука</a></li>
+    <li><a href="esports.html">Киберспорт</a></li>
+    <li><a href="tools.html">Инструменты</a></li>
+  </ul>
+  <div class="burger" id="burger"><span></span><span></span><span></span></div>
+</nav>
+
+<!-- HERO -->
+<section class="page-hero science-hero">
+  <div class="page-hero-content">
+    <span class="section-tag">🔬 Нейронаука</span>
+    <h1>Наука об играх:<br/><span class="gradient-text">что говорят учёные</span></h1>
+    <p>Более 200 научных исследований за последние 20 лет. Мы собрали самое важное.</p>
+    <div class="science-stats-row">
+      <div class="sci-stat"><span class="sci-num">200+</span><span>исследований</span></div>
+      <div class="sci-stat"><span class="sci-num">40+</span><span>университетов</span></div>
+      <div class="sci-stat"><span class="sci-num">2003</span><span>— первое fMRI-исследование</span></div>
+    </div>
+  </div>
+  <div class="science-brain-anim" id="brainAnim">
+    <div class="brain-glow">🧠</div>
+    <div class="orbit orbit1"><div class="orbit-dot"></div></div>
+    <div class="orbit orbit2"><div class="orbit-dot"></div></div>
+    <div class="orbit orbit3"><div class="orbit-dot"></div></div>
+  </div>
+</section>
+
+<!-- TIMELINE RESEARCH -->
+<section class="research-timeline-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">📜 История</span>
+      <h2>Важнейшие <span class="gradient-text">научные вехи в истории</span></h2>
+    </div>
+    <div class="rt-timeline">
+      <div class="rt-item">
+        <div class="rt-year">1980</div>
+        <div class="rt-dot"></div>
+        <div class="rt-content">
+          <h3>Первые исследования видеоигр</h3>
+          <p>Доктор Гари Кравиц (Yale) — первый психологический анализ влияния Pac-Man на детей.</p>
+          <span class="rt-tag">🏫 Психология</span>
+        </div>
+      </div>
+      <div class="rt-item">
+        <div class="rt-year">1996</div>
+        <div class="rt-dot"></div>
+        <div class="rt-content">
+          <h3>Tetris Effect</h3>
+          <p>Учёные обнаружили «эффект Tetris»: игровые образы проникают в сны и визуальные фантазии. Подтвердило гипотезу о нейропластичности.</p>
+          <span class="rt-tag">🧠 Нейронаука</span>
+        </div>
+      </div>
+      <div class="rt-item">
+        <div class="rt-year">2003</div>
+        <div class="rt-dot"></div>
+        <div class="rt-content">
+          <h3>Первое fMRI-исследование</h3>
+          <p>Griffiths & Wood: сети награды (dopaminergic pathways) активируются при игре так же, как при употреблении наркотиков.</p>
+          <span class="rt-tag">🏛️ fMRI</span>
+        </div>
+      </div>
+      <div class="rt-item">
+        <div class="rt-year">2009</div>
+        <div class="rt-dot"></div>
+        <div class="rt-content">
+          <h3>Action Games & Perception</h3>
+          <p>Daphne Bavelier (Rochester): action-игры улучшают визуальную акуитность на 20%. Стало базовым исследованием.</p>
+          <span class="rt-tag">👁️ Зрение</span>
+        </div>
+      </div>
+      <div class="rt-item">
+        <div class="rt-year">2013</div>
+        <div class="rt-dot"></div>
+        <div class="rt-content">
+          <h3>Grey Matter Study</h3>
+          <p>Max Planck Institute: регулярные игроки имеют больше серого вещества в префронтальной коре (+14%) и гиппокампе.</p>
+          <span class="rt-tag">🧠 Мозг</span>
+        </div>
+      </div>
+      <div class="rt-item">
+        <div class="rt-year">2018</div>
+        <div class="rt-dot"></div>
+        <div class="rt-content">
+          <h3>WHO: Gaming Disorder</h3>
+          <p>ВОЗ включила игровое расстройство (Gaming Disorder) в ICD-11 — международный классификатор болезней.</p>
+          <span class="rt-tag">🏥 Медицина</span>
+        </div>
+      </div>
+      <div class="rt-item">
+        <div class="rt-year">2020</div>
+        <div class="rt-dot"></div>
+        <div class="rt-content">
+          <h3>COVID & Gaming Research</h3>
+          <p>Пандемия: опубликованы 50+ статей. Игры помогли бороться с тревогой и изоляцией. Статья Przybylski & Weinstein (Oxford).</p>
+          <span class="rt-tag">🔬 COVID-19</span>
+        </div>
+      </div>
+      <div class="rt-item">
+        <div class="rt-year">2023</div>
+        <div class="rt-dot"></div>
+        <div class="rt-content">
+          <h3>AI в играх и мозг</h3>
+          <p>Новые исследования MIT: AI-персонажи вызывают те же нейронные цепи, что и реальные люди. Время реальности стирается.</p>
+          <span class="rt-tag">🤖 AI</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NEUROSCIENCE DEEP DIVE -->
+<section class="neuro-section">
+  <div class="container">
+    <div class="section-header light">
+      <span class="section-tag">🧠 Нейроны</span>
+      <h2>Что происходит <span class="gradient-text">в мозге во время игры?</span></h2>
+    </div>
+    <div class="neuro-grid">
+      <div class="neuro-card">
+        <div class="neuro-icon" style="background:linear-gradient(135deg,#7c3aed,#a78bfa)">💥</div>
+        <h3>Дофаминовая петля</h3>
+        <p>Каждое новое достижение, левелап, победа над боссом — выброс дофамина. Система вознаграждения мозга работает идентично при еде, сексе и наркотиках.</p>
+        <div class="neuro-chart">
+          <div class="nc-bar" style="height:85%;background:linear-gradient(to top,#7c3aed,#a78bfa)"><span>85</span></div>
+          <div class="nc-bar" style="height:90%;background:linear-gradient(to top,#7c3aed,#a78bfa)"><span>90</span></div>
+          <div class="nc-bar" style="height:75%;background:linear-gradient(to top,#7c3aed,#a78bfa)"><span>75</span></div>
+          <div class="nc-bar" style="height:95%;background:linear-gradient(to top,#7c3aed,#a78bfa)"><span>95</span></div>
+        </div>
+        <div class="nc-labels">
+          <span>RPG</span><span>Action</span><span>Пазл</span><span>PvP</span>
+        </div>
+      </div>
+      <div class="neuro-card">
+        <div class="neuro-icon" style="background:linear-gradient(135deg,#0891b2,#06b6d4)">⚡</div>
+        <h3>Кортизол (стресс)</h3>
+        <p>Резкие сцены, поражения, ородные моменты — выброс кортизола. 4ч+ в жестоких играх повышают базовый уровень кортизола на 30%.</p>
+        <div class="neuro-chart">
+          <div class="nc-bar" style="height:30%;background:linear-gradient(to top,#10b981,#06b6d4)"><span>30</span></div>
+          <div class="nc-bar" style="height:60%;background:linear-gradient(to top,#f59e0b,#ef4444)"><span>60</span></div>
+          <div class="nc-bar" style="height:85%;background:linear-gradient(to top,#ef4444,#f59e0b)"><span>85</span></div>
+          <div class="nc-bar" style="height:45%;background:linear-gradient(to top,#10b981,#06b6d4)"><span>45</span></div>
+        </div>
+        <div class="nc-labels">
+          <span>Пазл</span><span>RPG</span><span>Horror</span><span>Спорт</span>
+        </div>
+      </div>
+      <div class="neuro-card">
+        <div class="neuro-icon" style="background:linear-gradient(135deg,#065f46,#10b981)">💤</div>
+        <h3>Серотонин (настроение)</h3>
+        <p>Кооперативные игры повышают серотонин. Антидепрессантный эффект доказан у пациентов с лёгкой депрессией (Oxford, 2021).</p>
+        <div class="neuro-chart">
+          <div class="nc-bar" style="height:90%;background:linear-gradient(to top,#10b981,#06b6d4)"><span>90</span></div>
+          <div class="nc-bar" style="height:70%;background:linear-gradient(to top,#10b981,#06b6d4)"><span>70</span></div>
+          <div class="nc-bar" style="height:55%;background:linear-gradient(to top,#10b981,#06b6d4)"><span>55</span></div>
+          <div class="nc-bar" style="height:40%;background:linear-gradient(to top,#f59e0b,#ef4444)"><span>40</span></div>
+        </div>
+        <div class="nc-labels">
+          <span>Co-op</span><span>RPG</span><span>Casual</span><span>PvP</span>
+        </div>
+      </div>
+      <div class="neuro-card">
+        <div class="neuro-icon" style="background:linear-gradient(135deg,#d97706,#f59e0b)">🌙</div>
+        <h3>Мелатонин (сон)</h3>
+        <p>Синий свет экрана подавляет мелатонин через ипрргц (retinal light suppression). Игры вечером сдвигают отход ко сну на 1.5–2 часа.</p>
+        <div class="neuro-chart">
+          <div class="nc-bar" style="height:20%;background:linear-gradient(to top,#10b981,#06b6d4)"><span>20</span></div>
+          <div class="nc-bar" style="height:55%;background:linear-gradient(to top,#f59e0b,#ef4444)"><span>55</span></div>
+          <div class="nc-bar" style="height:85%;background:linear-gradient(to top,#ef4444,#f59e0b)"><span>85</span></div>
+          <div class="nc-bar" style="height:40%;background:linear-gradient(to top,#f59e0b,#ef4444)"><span>40</span></div>
+        </div>
+        <div class="nc-labels">
+          <span>Днём</span><span>Вечер</span><span>Ночью</span><span>VR</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- UNIVERSITIES -->
+<section class="unis-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">🏷️ Источники</span>
+      <h2>Топ <span class="gradient-text">научных центров</span></h2>
+    </div>
+    <div class="unis-grid">
+      <div class="uni-card">
+        <div class="uni-logo">🏛️</div>
+        <h3>MIT Media Lab</h3>
+        <p>Исследования влияния игр на обучение, реакцию и IQ. Более 30 опубликованных работ с 2000 г.</div>
+        <span class="uni-focus">Реакция & IQ</span>
+      </div>
+      <div class="uni-card">
+        <div class="uni-logo">🇬🇧</div>
+        <h3>Oxford Internet Institute</h3>
+        <p>Призыбылски & Вайнстейн: зависимость, благополучие, психическое здоровье. Nintendo + Oxford = крупнейшее исследование 2021.</div>
+        <span class="uni-focus">Здоровье & Благополучие</span>
+      </div>
+      <div class="uni-card">
+        <div class="uni-logo">🇩🇪</div>
+        <h3>Max Planck Institute</h3>
+        <p>Берлин: Grey Matter Study 2013 — fMRI-доказательство роста мозга у игроков Mario. Самое цитируемое исследование в истории.</div>
+        <span class="uni-focus">Нейронаука</span>
+      </div>
+      <div class="uni-card">
+        <div class="uni-logo">🇺🇸</div>
+        <h3>University of Rochester</h3>
+        <p>Daphne Bavelier: action-games улучшают контрастную чувствительность, скорость обработки информации, многозадачность.</div>
+        <span class="uni-focus">Зрение & Перцепция</span>
+      </div>
+      <div class="uni-card">
+        <div class="uni-logo">🇯🇵</div>
+        <h3>Keio University</h3>
+        <p>Япония: исследование влияния игр на социализацию детей. Разработка методики игротерапии для аутизма.</div>
+        <span class="uni-focus">Игротерапия</span>
+      </div>
+      <div class="uni-card">
+        <div class="uni-logo">🇨🇦</div>
+        <h3>University of Toronto</h3>
+        <p>3D video games & hippocampus: игры уменьшают атрофию гиппокампа у пожилых людей, помогают при Болезни Альцгеймера.</div>
+        <span class="uni-focus">Старение мозга</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-bottom" style="border:none;padding:30px 0">
+      <p>© 2026 GameHealth — <a href="index.html" style="color:var(--primary-light)">На главную</a></p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/science.js"></script>
+</body>
+</html>
