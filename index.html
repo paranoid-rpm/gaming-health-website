@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GameHealth — Игры и Здоровье</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+<!-- ========== NAVBAR ========== -->
+<nav class="navbar" id="navbar">
+  <div class="nav-logo">
+    <i class="fas fa-gamepad"></i>
+    <span>Game<span class="accent">Health</span></span>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#hero">Главная</a></li>
+    <li><a href="#stats">Статистика</a></li>
+    <li><a href="#effects">Влияние</a></li>
+    <li><a href="#brain">Мозг</a></li>
+    <li><a href="#body">Тело</a></li>
+    <li><a href="#psychology">Психология</a></li>
+    <li><a href="#tips">Советы</a></li>
+    <li><a href="#quiz">Тест</a></li>
+  </ul>
+  <div class="burger" id="burger">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- ========== HERO ========== -->
+<section class="hero" id="hero">
+  <div class="hero-particles" id="particles"></div>
+  <div class="hero-content">
+    <div class="hero-badge">🎮 Наука об играх</div>
+    <h1 class="hero-title">
+      Компьютерные игры<br />
+      <span class="gradient-text">& Твой Организм</span>
+    </h1>
+    <p class="hero-subtitle">
+      Узнай как видеоигры влияют на мозг, тело и психику.
+      Факты, исследования, советы — всё в одном месте.
+    </p>
+    <div class="hero-buttons">
+      <a href="#effects" class="btn btn-primary">
+        <i class="fas fa-bolt"></i> Исследовать
+      </a>
+      <a href="#quiz" class="btn btn-secondary">
+        <i class="fas fa-question-circle"></i> Пройти тест
+      </a>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <span class="stat-num" data-target="3200000000">0</span>
+        <span class="stat-label">Геймеров в мире</span>
+      </div>
+      <div class="hero-stat">
+        <span class="stat-num" data-target="8">0</span>
+        <span class="stat-label">Часов/день в среднем</span>
+      </div>
+      <div class="hero-stat">
+        <span class="stat-num" data-target="70">0</span>
+        <span class="stat-label">% улучшают реакцию</span>
+      </div>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="controller-3d">
+      <div class="glow-ring"></div>
+      <div class="controller-icon">🎮</div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== STATS BANNER ========== -->
+<section class="stats-banner" id="stats">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-card" data-aos="fade-up">
+        <div class="stat-icon" style="background: linear-gradient(135deg,#ff6b6b,#ee0979)">
+          <i class="fas fa-brain"></i>
+        </div>
+        <div class="stat-info">
+          <h3 class="counter" data-target="45">0</h3><span>%</span>
+          <p>Геймеров отмечают улучшение памяти</p>
+        </div>
+      </div>
+      <div class="stat-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="stat-icon" style="background: linear-gradient(135deg,#a18cd1,#fbc2eb)">
+          <i class="fas fa-eye"></i>
+        </div>
+        <div class="stat-info">
+          <h3 class="counter" data-target="58">0</h3><span>%</span>
+          <p>Улучшение периферийного зрения</p>
+        </div>
+      </div>
+      <div class="stat-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="stat-icon" style="background: linear-gradient(135deg,#f093fb,#f5576c)">
+          <i class="fas fa-heartbeat"></i>
+        </div>
+        <div class="stat-info">
+          <h3 class="counter" data-target="30">0</h3><span>%</span>
+          <p>Рост уровня стресса при игре 4ч+</p>
+        </div>
+      </div>
+      <div class="stat-card" data-aos="fade-up" data-aos-delay="300">
+        <div class="stat-icon" style="background: linear-gradient(135deg,#4facfe,#00f2fe)">
+          <i class="fas fa-clock"></i>
+        </div>
+        <div class="stat-info">
+          <h3 class="counter" data-target="7">0</h3><span>ч</span>
+          <p>Среднее время игры у подростков</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== EFFECTS SECTION ========== -->
+<section class="effects-section" id="effects">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">📊 Влияние</span>
+      <h2>Положительные и отрицательные<br /><span class="gradient-text">эффекты игр</span></h2>
+      <p>Игры — это не просто развлечение. Они меняют твой мозг, тело и мировосприятие.</p>
+    </div>
+    <div class="effects-tabs">
+      <button class="tab-btn active" data-tab="positive">✅ Положительные</button>
+      <button class="tab-btn" data-tab="negative">⚠️ Отрицательные</button>
+    </div>
+    <div class="tab-content active" id="positive">
+      <div class="effects-grid">
+        <div class="effect-card positive">
+          <div class="effect-icon">🧠</div>
+          <h3>Развитие когнитивных навыков</h3>
+          <p>Стратегические игры тренируют рабочую память, планирование и многозадачность. Исследования MIT показали рост IQ на 5-10 пунктов у регулярных геймеров.</p>
+          <div class="effect-meter"><div class="meter-fill" style="width:85%"></div></div>
+          <span class="effect-score">Эффект: 85%</span>
+        </div>
+        <div class="effect-card positive">
+          <div class="effect-icon">⚡</div>
+          <h3>Улучшение реакции</h3>
+          <p>Шутеры от первого лица ускоряют время реакции на 11-13%. Геймеры реагируют быстрее в реальных ситуациях — на дороге, в спорте.</p>
+          <div class="effect-meter"><div class="meter-fill" style="width:78%"></div></div>
+          <span class="effect-score">Эффект: 78%</span>
+        </div>
+        <div class="effect-card positive">
+          <div class="effect-icon">🤝</div>
+          <h3>Социальные связи</h3>
+          <p>Онлайн-игры формируют команды и дружбу. 70% геймеров говорят, что нашли настоящих друзей через игры.</p>
+          <div class="effect-meter"><div class="meter-fill" style="width:70%"></div></div>
+          <span class="effect-score">Эффект: 70%</span>
+        </div>
+        <div class="effect-card positive">
+          <div class="effect-icon">🎯</div>
+          <h3>Снятие стресса</h3>
+          <p>Казуальные игры снижают уровень кортизола. Учёные из Оксфорда: 1 час Tetris после стресса снижает тревожность на 30%.</p>
+          <div class="effect-meter"><div class="meter-fill" style="width:72%"></div></div>
+          <span class="effect-score">Эффект: 72%</span>
+        </div>
+        <div class="effect-card positive">
+          <div class="effect-icon">🔬</div>
+          <h3>Реабилитация и медицина</h3>
+          <p>VR-игры используют в реабилитации после инсультов. Игровые механики помогают пациентам восстанавливать моторику в 2х быстрее.</p>
+          <div class="effect-meter"><div class="meter-fill" style="width:90%"></div></div>
+          <span class="effect-score">Эффект: 90%</span>
+        </div>
+        <div class="effect-card positive">
+          <div class="effect-icon">🗺️</div>
+          <h3>Пространственное мышление</h3>
+          <p>3D-игры улучшают пространственное мышление — навык критически важный в архитектуре, хирургии, инженерии.</p>
+          <div class="effect-meter"><div class="meter-fill" style="width:80%"></div></div>
+          <span class="effect-score">Эффект: 80%</span>
+        </div>
+      </div>
+    </div>
+    <div class="tab-content" id="negative">
+      <div class="effects-grid">
+        <div class="effect-card negative">
+          <div class="effect-icon">😴</div>
+          <h3>Нарушение сна</h3>
+          <p>Синий свет экрана подавляет мелатонин. Игры перед сном сдвигают цикл сна на 1-2 часа. 68% геймеров страдают от хронического недосыпания.</p>
+          <div class="effect-meter"><div class="meter-fill negative-fill" style="width:82%"></div></div>
+          <span class="effect-score danger">Риск: 82%</span>
+        </div>
+        <div class="effect-card negative">
+          <div class="effect-icon">📱</div>
+          <h3>Зависимость</h3>
+          <p>ВОЗ признала игровое расстройство болезнью в 2018. Около 3-4% геймеров имеют клинически значимую зависимость.</p>
+          <div class="effect-meter"><div class="meter-fill negative-fill" style="width:65%"></div></div>
+          <span class="effect-score danger">Риск: 65%</span>
+        </div>
+        <div class="effect-card negative">
+          <div class="effect-icon">🦴</div>
+          <h3>Проблемы с позвоночником</h3>
+          <p>Сидячий образ жизни геймера ведёт к сколиозу и остеохондрозу. 60% геймеров жалуются на боли в спине уже к 25 годам.</p>
+          <div class="effect-meter"><div class="meter-fill negative-fill" style="width:75%"></div></div>
+          <span class="effect-score danger">Риск: 75%</span>
+        </div>
+        <div class="effect-card negative">
+          <div class="effect-icon">👁️</div>
+          <h3>Ухудшение зрения</h3>
+          <p>Длительный экранный контакт вызывает синдром сухого глаза и может ускорить прогрессирование миопии.</p>
+          <div class="effect-meter"><div class="meter-fill negative-fill" style="width:70%"></div></div>
+          <span class="effect-score danger">Риск: 70%</span>
+        </div>
+        <div class="effect-card negative">
+          <div class="effect-icon">😤</div>
+          <h3>Агрессия</h3>
+          <p>Длительная игра в жестокие игры коррелирует с повышенной агрессивностью у подростков, хотя причинно-следственная связь остаётся дискуссионной.</p>
+          <div class="effect-meter"><div class="meter-fill negative-fill" style="width:55%"></div></div>
+          <span class="effect-score danger">Риск: 55%</span>
+        </div>
+        <div class="effect-card negative">
+          <div class="effect-icon">🍔</div>
+          <h3>Малоподвижность и ожирение</h3>
+          <p>Геймеры проводят за экраном до 8-10 часов. Снижение физической активности повышает риск ожирения и сердечно-сосудистых заболеваний.</p>
+          <div class="effect-meter"><div class="meter-fill negative-fill" style="width:68%"></div></div>
+          <span class="effect-score danger">Риск: 68%</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== BRAIN SECTION ========== -->
+<section class="brain-section" id="brain">
+  <div class="container">
+    <div class="section-header light">
+      <span class="section-tag">🧠 Нейронаука</span>
+      <h2>Что происходит<br /><span class="gradient-text">в твоём мозге?</span></h2>
+    </div>
+    <div class="brain-grid">
+      <div class="brain-visual">
+        <div class="brain-diagram">
+          <div class="brain-area" style="top:20%;left:35%" data-info="Префронтальная кора: планирование, принятие решений">
+            <div class="area-dot"></div>
+            <div class="area-label">Префронтальная кора</div>
+          </div>
+          <div class="brain-area" style="top:45%;left:15%" data-info="Гиппокамп: память и пространственная навигация">
+            <div class="area-dot"></div>
+            <div class="area-label">Гиппокамп</div>
+          </div>
+          <div class="brain-area" style="top:40%;left:60%" data-info="Стриатум: система вознаграждения, дофамин">
+            <div class="area-dot"></div>
+            <div class="area-label">Стриатум</div>
+          </div>
+          <div class="brain-area" style="top:65%;left:40%" data-info="Мозжечок: координация и моторные навыки">
+            <div class="area-dot"></div>
+            <div class="area-label">Мозжечок</div>
+          </div>
+          <div class="brain-emoji">🧠</div>
+        </div>
+      </div>
+      <div class="brain-facts">
+        <div class="brain-fact-card">
+          <div class="fact-number">01</div>
+          <div class="fact-content">
+            <h3>Дофаминовый всплеск</h3>
+            <p>Каждое достижение в игре вызывает выброс дофамина — нейромедиатора удовольствия. Это та же реакция, что при еде или сексе. Именно поэтому игры так захватывают.</p>
+          </div>
+        </div>
+        <div class="brain-fact-card">
+          <div class="fact-number">02</div>
+          <div class="fact-content">
+            <h3>Нейропластичность</h3>
+            <p>Регулярные игры буквально изменяют структуру мозга. У опытных геймеров объём серого вещества в зонах внимания и памяти на 14% больше.</p>
+          </div>
+        </div>
+        <div class="brain-fact-card">
+          <div class="fact-number">03</div>
+          <div class="fact-content">
+            <h3>Мультизадачность</h3>
+            <p>Action-игры тренируют способность отслеживать несколько объектов одновременно. Геймеры переключаются между задачами на 25% быстрее.</p>
+          </div>
+        </div>
+        <div class="brain-fact-card">
+          <div class="fact-number">04</div>
+          <div class="fact-content">
+            <h3>Flow-состояние</h3>
+            <p>Хорошие игры вводят в состояние «потока» — максимальной концентрации и продуктивности. Этот феномен изучал психолог Михай Чиксентмихайи.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== BODY SECTION ========== -->
+<section class="body-section" id="body">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">💪 Физиология</span>
+      <h2>Влияние на <span class="gradient-text">физическое тело</span></h2>
+      <p>От глаз до позвоночника — разбираем каждую систему организма</p>
+    </div>
+    <div class="body-timeline">
+      <div class="timeline-item left">
+        <div class="timeline-icon">👁️</div>
+        <div class="timeline-content">
+          <h3>Зрение</h3>
+          <p>Синий свет (длина волны 415-455нм) от мониторов повреждает сетчатку и нарушает выработку мелатонина. Правило 20-20-20: каждые 20 минут смотри 20 секунд на объект в 20 футах.</p>
+          <div class="timeline-tags">
+            <span class="tag warning">⚠️ Риск миопии</span>
+            <span class="tag info">💡 Очки с блокировкой синего</span>
+          </div>
+        </div>
+      </div>
+      <div class="timeline-item right">
+        <div class="timeline-icon">🤲</div>
+        <div class="timeline-content">
+          <h3>Запястья и кисти</h3>
+          <p>Туннельный синдром запястья — профессиональная болезнь геймеров. До 56% профессиональных киберспортсменов имеют проблемы с суставами рук.</p>
+          <div class="timeline-tags">
+            <span class="tag warning">⚠️ Туннельный синдром</span>
+            <span class="tag info">💡 Эргономичная мышь</span>
+          </div>
+        </div>
+      </div>
+      <div class="timeline-item left">
+        <div class="timeline-icon">🦴</div>
+        <div class="timeline-content">
+          <h3>Позвоночник</h3>
+          <p>Игровая поза с наклоном вперёд создаёт нагрузку 27 кг на шейные позвонки. Правильная осанка и эргономичное кресло снижают риск остеохондроза на 60%.</p>
+          <div class="timeline-tags">
+            <span class="tag warning">⚠️ Сколиоз</span>
+            <span class="tag info">💡 Игровое кресло с поддержкой</span>
+          </div>
+        </div>
+      </div>
+      <div class="timeline-item right">
+        <div class="timeline-icon">❤️</div>
+        <div class="timeline-content">
+          <h3>Сердечно-сосудистая система</h3>
+          <p>Малоподвижность повышает риск сердечных заболеваний. Но! Активные VR-игры и ритм-игры могут заменить лёгкое кардио — сжигая до 400 ккал/час.</p>
+          <div class="timeline-tags">
+            <span class="tag warning">⚠️ Риск при гиподинамии</span>
+            <span class="tag success">✅ VR как кардио</span>
+          </div>
+        </div>
+      </div>
+      <div class="timeline-item left">
+        <div class="timeline-icon">😴</div>
+        <div class="timeline-content">
+          <h3>Сон и циркадные ритмы</h3>
+          <p>Игры активируют симпатическую нервную систему. ЧСС повышается на 10-20 уд/мин. После игры организму нужно 45-90 минут чтобы «успокоиться» для засыпания.</p>
+          <div class="timeline-tags">
+            <span class="tag warning">⚠️ Инсомния</span>
+            <span class="tag info">💡 Стоп-игры за 1.5ч до сна</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== PSYCHOLOGY ========== -->
+<section class="psychology-section" id="psychology">
+  <div class="container">
+    <div class="section-header light">
+      <span class="section-tag">🧩 Психология</span>
+      <h2>Психологический<br /><span class="gradient-text">портрет геймера</span></h2>
+    </div>
+    <div class="psych-grid">
+      <div class="psych-card">
+        <div class="psych-header" style="background: linear-gradient(135deg, #667eea, #764ba2)">
+          <i class="fas fa-user-friends"></i>
+          <h3>Социализация</h3>
+        </div>
+        <div class="psych-body">
+          <p>Онлайн-игры создают уникальные социальные связи. Командная игра развивает лидерство, эмпатию и коммуникативные навыки.</p>
+          <ul>
+            <li>✅ 70% нашли друзей в играх</li>
+            <li>✅ Развитие teamwork навыков</li>
+            <li>⚠️ Риск изоляции при злоупотреблении</li>
+          </ul>
+        </div>
+      </div>
+      <div class="psych-card">
+        <div class="psych-header" style="background: linear-gradient(135deg, #f093fb, #f5576c)">
+          <i class="fas fa-shield-alt"></i>
+          <h3>Стресс и тревога</h3>
+        </div>
+        <div class="psych-body">
+          <p>Игры — мощный инструмент управления стрессом. Но граница между релаксацией и эскапизмом очень тонкая.</p>
+          <ul>
+            <li>✅ Снижение кортизола при казуальных играх</li>
+            <li>✅ Отвлечение от тревожных мыслей</li>
+            <li>⚠️ Повышение тревоги при конкурентных играх</li>
+          </ul>
+        </div>
+      </div>
+      <div class="psych-card">
+        <div class="psych-header" style="background: linear-gradient(135deg, #4facfe, #00f2fe)">
+          <i class="fas fa-star"></i>
+          <h3>Самооценка</h3>
+        </div>
+        <div class="psych-body">
+          <p>Достижения в играх дают чувство компетентности и гордости. Особенно важно для подростков с низкой самооценкой.</p>
+          <ul>
+            <li>✅ Рост уверенности через достижения</li>
+            <li>✅ Признание в игровом сообществе</li>
+            <li>⚠️ Зависимость самооценки от побед</li>
+          </ul>
+        </div>
+      </div>
+      <div class="psych-card">
+        <div class="psych-header" style="background: linear-gradient(135deg, #43e97b, #38f9d7)">
+          <i class="fas fa-brain"></i>
+          <h3>Зависимость (ВОЗ)</h3>
+        </div>
+        <div class="psych-body">
+          <p>Gaming disorder — официальный диагноз ВОЗ с 2018 года. Критерии: потеря контроля над игрой, приоритет игры над всем остальным, продолжение несмотря на вред.</p>
+          <ul>
+            <li>⚠️ 3-4% геймеров имеют зависимость</li>
+            <li>⚠️ Пик риска — подростки 15-19 лет</li>
+            <li>✅ Поддаётся лечению КПТ</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== TIPS ========== -->
+<section class="tips-section" id="tips">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">💡 Советы</span>
+      <h2>Как играть <span class="gradient-text">с умом?</span></h2>
+      <p>10 научно обоснованных правил здорового гейминга</p>
+    </div>
+    <div class="tips-grid">
+      <div class="tip-card">
+        <div class="tip-number">01</div>
+        <div class="tip-icon">⏰</div>
+        <h3>Правило 50/10</h3>
+        <p>50 минут игры — 10 минут отдыха. Встань, потянись, сделай зарядку для глаз.</p>
+      </div>
+      <div class="tip-card">
+        <div class="tip-number">02</div>
+        <div class="tip-icon">💡</div>
+        <h3>Освещение</h3>
+        <p>Играй при хорошем освещении комнаты. Контраст между ярким экраном и тёмной комнатой утомляет глаза.</p>
+      </div>
+      <div class="tip-card">
+        <div class="tip-number">03</div>
+        <div class="tip-icon">📏</div>
+        <h3>Дистанция</h3>
+        <p>Монитор на расстоянии 50-70 см. Верхний край экрана на уровне глаз или чуть ниже.</p>
+      </div>
+      <div class="tip-card">
+        <div class="tip-number">04</div>
+        <div class="tip-icon">🌙</div>
+        <h3>Ночной режим</h3>
+        <p>Включай Night Mode или f.lux вечером. Минимум 1.5 часа без экрана перед сном.</p>
+      </div>
+      <div class="tip-card">
+        <div class="tip-number">05</div>
+        <div class="tip-icon">💧</div>
+        <h3>Гидратация</h3>
+        <p>Держи стакан воды рядом. Геймеры часто забывают пить — обезвоживание снижает концентрацию на 20%.</p>
+      </div>
+      <div class="tip-card">
+        <div class="tip-number">06</div>
+        <div class="tip-icon">🏃</div>
+        <h3>Физическая активность</h3>
+        <p>30 минут спорта в день нейтрализуют многие негативные эффекты сидячего гейминга.</p>
+      </div>
+      <div class="tip-card">
+        <div class="tip-number">07</div>
+        <div class="tip-icon">🪑</div>
+        <h3>Эргономика</h3>
+        <p>Прямая спина, ступни на полу, локти под углом 90°. Инвестиция в хорошее кресло — инвестиция в здоровье.</p>
+      </div>
+      <div class="tip-card">
+        <div class="tip-number">08</div>
+        <div class="tip-icon">🍎</div>
+        <h3>Питание</h3>
+        <p>Избегай снеков и сладкого во время игры. Орехи, фрукты — лучшее топливо для геймера.</p>
+      </div>
+      <div class="tip-card">
+        <div class="tip-number">09</div>
+        <div class="tip-icon">📵</div>
+        <h3>Цифровой детокс</h3>
+        <p>Один день в неделю без игр. Это не слабость — это перезагрузка нервной системы.</p>
+      </div>
+      <div class="tip-card">
+        <div class="tip-number">10</div>
+        <div class="tip-icon">🎯</div>
+        <h3>Осознанность</h3>
+        <p>Спрашивай себя: «Я играю потому что хочу, или потому что не могу остановиться?» Разница важна.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== QUIZ ========== -->
+<section class="quiz-section" id="quiz">
+  <div class="container">
+    <div class="section-header light">
+      <span class="section-tag">🎯 Тест</span>
+      <h2>Проверь себя:<br /><span class="gradient-text">твои игровые привычки</span></h2>
+    </div>
+    <div class="quiz-container">
+      <div class="quiz-progress">
+        <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+        <span id="questionCounter">Вопрос 1 из 6</span>
+      </div>
+      <div class="quiz-card" id="quizCard">
+        <div class="quiz-question" id="quizQuestion">Сколько часов в день ты играешь?</div>
+        <div class="quiz-options" id="quizOptions">
+          <button class="quiz-option" data-value="1">Меньше 1 часа</button>
+          <button class="quiz-option" data-value="2">1-2 часа</button>
+          <button class="quiz-option" data-value="3">3-4 часа</button>
+          <button class="quiz-option" data-value="4">5+ часов</button>
+        </div>
+      </div>
+      <div class="quiz-result" id="quizResult" style="display:none">
+        <div class="result-emoji" id="resultEmoji"></div>
+        <h3 id="resultTitle"></h3>
+        <p id="resultText"></p>
+        <button class="btn btn-primary" onclick="resetQuiz()">Пройти снова</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="nav-logo">
+          <i class="fas fa-gamepad"></i>
+          <span>Game<span class="accent">Health</span></span>
+        </div>
+        <p>Наука о здоровом гейминге. Основано на реальных исследованиях.</p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-discord"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-telegram"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Разделы</h4>
+        <ul>
+          <li><a href="#effects">Влияние игр</a></li>
+          <li><a href="#brain">Мозг и нейронаука</a></li>
+          <li><a href="#body">Физиология</a></li>
+          <li><a href="#psychology">Психология</a></li>
+          <li><a href="#tips">Советы геймеру</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Источники</h4>
+        <ul>
+          <li><a href="#">Исследования ВОЗ</a></li>
+          <li><a href="#">MIT Media Lab</a></li>
+          <li><a href="#">Oxford Internet Institute</a></li>
+          <li><a href="#">American Psychol. Assoc.</a></li>
+        </ul>
+      </div>
+      <div class="footer-newsletter">
+        <h4>Будь в курсе</h4>
+        <p>Подпишись на рассылку о здоровом гейминге</p>
+        <div class="newsletter-form">
+          <input type="email" placeholder="твой@email.com" />
+          <button class="btn btn-primary">→</button>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 GameHealth. Сделано с ❤️ для геймеров</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
